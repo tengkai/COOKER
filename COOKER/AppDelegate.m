@@ -10,7 +10,6 @@
 #import "CustomTabBarController.h"
 #import "LeftViewController.h"
 #import "MViewController.h"
-
 @interface AppDelegate ()
 
 @end
@@ -20,13 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //MaxLeap操作
+    [MaxLeap setApplicationId:@"5750de70169e7d0001a604f8" clientKey:@"bUQ0cEQ3SEEtdXVDWHFQbTd1YXdLUQ" site:MLSiteCN];
+    
+    MLObject *obj = [MLObject objectWithoutDataWithClassName:@"Test" objectId:@"561c83c0226"];
+    [obj fetchIfNeededInBackgroundWithBlock:^(MLObject * _Nullable object, NSError * _Nullable error) {
+        if (error.code == kMLErrorInvalidObjectId) {
+            NSLog(@"已经能够正确连接上您的云端应用");
+        } else {
+            NSLog(@"应用访问凭证不正确，请检查。");
+        }
+    }];
+
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"home_top_movie_background_cover"]]];
     
     [self.window makeKeyAndVisible];
     
-    /*————————————————————————————————————————————————————————————————————————————*/
+   
     
     NSArray *vc_names = @[@"Menu",@"Cook",@"Overbooking",@"News"];
     
