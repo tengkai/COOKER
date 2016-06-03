@@ -12,6 +12,11 @@
 
 #import "BaseViewController.h"
 #import "BaseNavigationController.h"
+//导入MaxLeap的头文件
+#import <MaxLeap/MaxLeap.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+
 
 #import "AppDelegate.h"
 

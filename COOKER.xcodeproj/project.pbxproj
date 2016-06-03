@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FBE842C2413BCA21FD2B0C8 /* libPods-COOKER.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23271EE6363D33C23CC1CB /* libPods-COOKER.a */; };
 		C6FA67201D00265D0042C30F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA671F1D00265D0042C30F /* main.m */; };
 		C6FA67291D00265D0042C30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA67271D00265D0042C30F /* Main.storyboard */; };
 		C6FA672B1D00265D0042C30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FA672A1D00265D0042C30F /* Assets.xcassets */; };
@@ -231,6 +232,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C23271EE6363D33C23CC1CB /* libPods-COOKER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-COOKER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF13A0384EA3D25010DF86E /* Pods-COOKER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOKER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-COOKER/Pods-COOKER.debug.xcconfig"; sourceTree = "<group>"; };
+		581C0DB5B2823732071078B3 /* Pods-COOKER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOKER.release.xcconfig"; path = "Pods/Target Support Files/Pods-COOKER/Pods-COOKER.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA671B1D00265D0042C30F /* COOKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOKER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FA671F1D00265D0042C30F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6FA67281D00265D0042C30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -474,17 +478,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBE842C2413BCA21FD2B0C8 /* libPods-COOKER.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1916ECF5F60118417AAACD1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FF13A0384EA3D25010DF86E /* Pods-COOKER.debug.xcconfig */,
+				581C0DB5B2823732071078B3 /* Pods-COOKER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		654C74A179FAED531D519455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C23271EE6363D33C23CC1CB /* libPods-COOKER.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6FA67121D00265D0042C30F = {
 			isa = PBXGroup;
 			children = (
 				C6FA671D1D00265D0042C30F /* COOKER */,
 				C6FA671C1D00265D0042C30F /* Products */,
+				1916ECF5F60118417AAACD1A /* Pods */,
+				654C74A179FAED531D519455 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1033,9 +1057,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6FA67321D00265D0042C30F /* Build configuration list for PBXNativeTarget "COOKER" */;
 			buildPhases = (
+				28B57C7E6AE799BF5827D3DB /* 📦 Check Pods Manifest.lock */,
 				C6FA67171D00265D0042C30F /* Sources */,
 				C6FA67181D00265D0042C30F /* Frameworks */,
 				C6FA67191D00265D0042C30F /* Resources */,
+				D01C03DDCB646420F04F82DE /* 📦 Embed Pods Frameworks */,
+				5C99ADBA55F9F462A7B1E367 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1297,6 +1324,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28B57C7E6AE799BF5827D3DB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C99ADBA55F9F462A7B1E367 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COOKER/Pods-COOKER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01C03DDCB646420F04F82DE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COOKER/Pods-COOKER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6FA67171D00265D0042C30F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1421,10 +1496,11 @@
 		};
 		C6FA67331D00265D0042C30F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FF13A0384EA3D25010DF86E /* Pods-COOKER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/BEVER/Desktop/COOKER/COOKER/framework/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/COOKER/framework/PrefixHeader.pch";
 				INFOPLIST_FILE = COOKER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = linan.COOKER;
@@ -1434,10 +1510,11 @@
 		};
 		C6FA67341D00265D0042C30F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581C0DB5B2823732071078B3 /* Pods-COOKER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/BEVER/Desktop/COOKER/COOKER/framework/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/COOKER/framework/PrefixHeader.pch";
 				INFOPLIST_FILE = COOKER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = linan.COOKER;
