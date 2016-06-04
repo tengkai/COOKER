@@ -1,55 +1,30 @@
 //
-//  SetViewController.m
-//  PRO3
+//  SystemSettingsTableViewController.m
+//  COOKER
 //
-//  Created by BEVER on 16/6/2.
+//  Created by BEVER on 16/6/3.
 //  Copyright © 2016年 李楠. All rights reserved.
 //
 
-#import "SetViewController.h"
 #import "SystemSettingsTableViewController.h"
 
-
-@interface SetViewController ()<UIAlertViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, strong) UITableView *SystemSettingsTableView;
-
-@property (nonatomic,strong) NSArray *titles;
+@interface SystemSettingsTableViewController ()
 
 @end
 
-@implementation SetViewController
-
+@implementation SystemSettingsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"设置";
     
-    self.setTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,kScreenWidth,kScreenHeight) style:(UITableViewStylePlain)];
-    self.setTableView.delegate = self;
-    self.setTableView.dataSource = self;
-    self.setTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.tableView addSubview:self.setTableView];
-    
-    self.setTableView.hidden = YES;
-    self.setTableView.userInteractionEnabled = NO;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (tableView == self.setTableView) {
-        return 3;
-    }
-    return 4;
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (tableView == self.setTableView) {
+    if (tableView == self.SystemTableView) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"setTableViewCell"];
         
         if (cell == nil) {
@@ -60,30 +35,50 @@
         return cell;
     }
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SystemSettingsTableViewCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LCMSetTableViewCell"];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"SystemSettingsTableViewCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"LCMSetTableViewCell"];
     }
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"系统设置";
+        cell.textLabel.text = @"护眼模式";
+        
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"nightMode"] == 0) {
+            cell.detailTextLabel.text = @"关";
+        } else {
+            cell.detailTextLabel.text = @"开";
+        }
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
     } else if (indexPath.row == 1) {
         
-        cell.textLabel.text = @"皮肤更换";
+        NSUserDefaults *userUD = [[NSUserDefaults alloc] init];
+        
+        if ([userUD valueForKey:@"wordSize"] == nil) {
+            [userUD setValue:@"1" forKey:@"wordSize"];
+        }
+        
+        cell.textLabel.text = @"正文字号";
+        if ([[userUD valueForKey:@"wordSize"] isEqualToString:@"0"]) {
+            cell.detailTextLabel.text = @"小号字";
+        } else if ([[userUD valueForKey:@"wordSize"] isEqualToString:@"1"]) {
+            cell.detailTextLabel.text = @"中号字";
+        } else {
+            cell.detailTextLabel.text = @"大号字";
+        }
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
     } else if (indexPath.row == 3) {
         
-        cell.textLabel.text = @"清除缓存";
-        
-        NSString *path = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
-        CGFloat number = [self getSize];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2fM", number];
+        cell.textLabel.text = @"版权声明";
         
     } else if (indexPath.row == 2) {
         
-        cell.textLabel.text = @"账户与安全";
+        cell.textLabel.text = @"清除缓存";
+        NSString *path = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
+        CGFloat number = [self getSize];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2fM", number];
         
     }
     
@@ -94,7 +89,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (tableView == self.SystemSettingsTableView) {
+    if (tableView == self.SystemTableView) {
         
         NSString *wordSize = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
         
@@ -112,8 +107,8 @@
         }
         
         [self.tableView reloadData];
-        self.SystemSettingsTableView.hidden = YES;
-        self.SystemSettingsTableView.userInteractionEnabled = YES;
+        self.SystemTableView.hidden = YES;
+        self.SystemTableView.userInteractionEnabled = YES;
         
         return;
     }
@@ -131,13 +126,13 @@
     } else if (indexPath.row == 1) {
         
         //选择正文字号
-        self.SystemSettingsTableView.hidden = NO;
-        self.SystemSettingsTableView.userInteractionEnabled = YES;
+        self.SystemTableView.hidden = NO;
+        self.SystemTableView.userInteractionEnabled = YES;
         
     } else if (indexPath.row == 3) {
         
-        SystemSettingsTableViewController *SystemSTVC = [[SystemSettingsTableViewController alloc] init];
-        [self.navigationController pushViewController:SystemSTVC animated:YES];
+        LCMCopyrightViewController *copyrightVC = [[LCMCopyrightViewController alloc] init];
+        [self.navigationController pushViewController:copyrightVC animated:YES];
         
     } else if (indexPath.row == 2) {
         
@@ -172,68 +167,36 @@
 
 
 
-//#pragma mark 遍历文件夹获得文件夹大小，返回多少M
-//- (float)folderSizeAtPath:(NSString*)folderPath {
-//
-//    NSFileManager *manager = [NSFileManager defaultManager];
-//
-//    if (![manager fileExistsAtPath:folderPath]) return 0;
-//
-//    NSEnumerator *childFilesEnumerator = [[manager subpathsAtPath:folderPath] objectEnumerator];
-//
-//    NSString *fileName;
-//
-//    long long folderSize = 0;
-//
-//    while ((fileName = [childFilesEnumerator nextObject]) != nil){
-//
-//        NSString *fileAbsolutePath = [folderPath stringByAppendingPathComponent:fileName];
-//
-//        folderSize += [self fileSizeAtPath:fileAbsolutePath];
-//
-//    }
-//
-//    return folderSize / (1024.0) / (1024.0);
-//
-//}
-
-#pragma mark 清理缓存成功
-- (void)clearCacheSuccess
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"清除缓存成功" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
-    
-    [alert show];
-    
-    [self performSelector:@selector(removeAlertView:) withObject:alert afterDelay:0.3];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (void)removeAlertView:(UIAlertView *)alertView
+#pragma mark UIAlertView代理方法
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    //alertView消失
-    [alertView dismissWithClickedButtonIndex:0 animated:YES];
-}
-
-#pragma mark 获得缓存文件大小
-- (float)getSize
-{
-    return [[SDImageCache sharedImageCache] getSize] / 1024.0 / 1024.0;
-}
-
-#pragma mark 返回单个文件的大小
-- (long long) fileSizeAtPath:(NSString *)filePath {
-    
-    NSFileManager *manager = [NSFileManager defaultManager];
-    
-    if ([manager fileExistsAtPath:filePath]){
+    if (buttonIndex == 1) {
         
-        return [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
-        
+        //判断是否开启夜间模式
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"nightMode"] == 0) {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"nightMode"];
+            [self.tableView reloadData];
+            
+            NSString *nightMode = @"1";
+            //通知中心，监听夜间模式是否开启
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"nightMode" object:nightMode];
+            
+        } else {
+            
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"nightMode"];
+            [self.tableView reloadData];
+            
+            NSString *nightMode = @"0";
+            //通知中心，监听夜间模式是否开启
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"nightMode" object:nightMode];
+            
+        }
     }
-    
-    return 0;
-    
 }
-
-
 
 @end

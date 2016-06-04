@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C627C4011D01686C00A5F9EB /* RegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627C3FF1D01686C00A5F9EB /* RegisterTableViewController.m */; };
+		C627C4021D01686C00A5F9EB /* RegisterTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C627C4001D01686C00A5F9EB /* RegisterTableViewController.xib */; };
+		C627C4061D01689200A5F9EB /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627C4041D01689200A5F9EB /* LoginTableViewController.m */; };
+		C627C4071D01689200A5F9EB /* LoginTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C627C4051D01689200A5F9EB /* LoginTableViewController.xib */; };
+		C6C382AC1D011B2C00C2C4EF /* SystemSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382AB1D011B2C00C2C4EF /* SystemSettingsTableViewController.m */; };
+		C6C382E01D01279E00C2C4EF /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382CB1D01279E00C2C4EF /* MenuViewController.m */; };
+		C6C382E11D01279E00C2C4EF /* CookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382D11D01279E00C2C4EF /* CookViewController.m */; };
+		C6C382E21D01279E00C2C4EF /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382D71D01279E00C2C4EF /* NewsViewController.m */; };
+		C6C382E31D01279E00C2C4EF /* OverbookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382DD1D01279E00C2C4EF /* OverbookingViewController.m */; };
+		C6C382EA1D01288500C2C4EF /* OurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382E61D01288500C2C4EF /* OurViewController.m */; };
+		C6C382F21D01299100C2C4EF /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C382F01D01299100C2C4EF /* UserTableViewController.m */; };
+		C6C382F31D01299100C2C4EF /* UserTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C382F11D01299100C2C4EF /* UserTableViewController.xib */; };
 		C6FA67201D00265D0042C30F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA671F1D00265D0042C30F /* main.m */; };
 		C6FA67291D00265D0042C30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA67271D00265D0042C30F /* Main.storyboard */; };
 		C6FA672B1D00265D0042C30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FA672A1D00265D0042C30F /* Assets.xcassets */; };
@@ -220,17 +232,34 @@
 		C6FA690C1D0027050042C30F /* tableView_line_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6FA68151D0027040042C30F /* tableView_line_home@2x.png */; };
 		C6FA690D1D0027050042C30F /* up_home.png in Resources */ = {isa = PBXBuildFile; fileRef = C6FA68161D0027040042C30F /* up_home.png */; };
 		C6FA690E1D0027050042C30F /* up_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6FA68171D0027040042C30F /* up_home@2x.png */; };
-		C6FA690F1D0027050042C30F /* OverbookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA681C1D0027040042C30F /* OverbookingViewController.m */; };
-		C6FA69101D0027050042C30F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA68221D0027040042C30F /* NewsViewController.m */; };
-		C6FA69111D0027050042C30F /* CookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA68281D0027040042C30F /* CookViewController.m */; };
 		C6FA69121D0027050042C30F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA682D1D0027040042C30F /* LeftViewController.m */; };
 		C6FA69131D0027050042C30F /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FA682E1D0027040042C30F /* LeftViewController.xib */; };
 		C6FA69141D0027050042C30F /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA68341D0027040042C30F /* SetViewController.m */; };
-		C6FA69151D0027050042C30F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA68391D0027040042C30F /* MenuViewController.m */; };
 		C6FA69161D0027050042C30F /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA683D1D0027050042C30F /* MViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C627C3FE1D01686C00A5F9EB /* RegisterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTableViewController.h; sourceTree = "<group>"; };
+		C627C3FF1D01686C00A5F9EB /* RegisterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTableViewController.m; sourceTree = "<group>"; };
+		C627C4001D01686C00A5F9EB /* RegisterTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewController.xib; sourceTree = "<group>"; };
+		C627C4031D01689200A5F9EB /* LoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewController.h; sourceTree = "<group>"; };
+		C627C4041D01689200A5F9EB /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
+		C627C4051D01689200A5F9EB /* LoginTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewController.xib; sourceTree = "<group>"; };
+		C6C382AA1D011B2C00C2C4EF /* SystemSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSettingsTableViewController.h; sourceTree = "<group>"; };
+		C6C382AB1D011B2C00C2C4EF /* SystemSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSettingsTableViewController.m; sourceTree = "<group>"; };
+		C6C382CA1D01279E00C2C4EF /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C6C382CB1D01279E00C2C4EF /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C6C382D01D01279E00C2C4EF /* CookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookViewController.h; sourceTree = "<group>"; };
+		C6C382D11D01279E00C2C4EF /* CookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookViewController.m; sourceTree = "<group>"; };
+		C6C382D61D01279E00C2C4EF /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		C6C382D71D01279E00C2C4EF /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		C6C382DC1D01279E00C2C4EF /* OverbookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverbookingViewController.h; sourceTree = "<group>"; };
+		C6C382DD1D01279E00C2C4EF /* OverbookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverbookingViewController.m; sourceTree = "<group>"; };
+		C6C382E51D01288500C2C4EF /* OurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurViewController.h; sourceTree = "<group>"; };
+		C6C382E61D01288500C2C4EF /* OurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurViewController.m; sourceTree = "<group>"; };
+		C6C382EF1D01299100C2C4EF /* UserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewController.h; sourceTree = "<group>"; };
+		C6C382F01D01299100C2C4EF /* UserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
+		C6C382F11D01299100C2C4EF /* UserTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewController.xib; sourceTree = "<group>"; };
 		C6FA671B1D00265D0042C30F /* COOKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOKER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FA671F1D00265D0042C30F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6FA67281D00265D0042C30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -452,21 +481,13 @@
 		C6FA68151D0027040042C30F /* tableView_line_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableView_line_home@2x.png"; sourceTree = "<group>"; };
 		C6FA68161D0027040042C30F /* up_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_home.png; sourceTree = "<group>"; };
 		C6FA68171D0027040042C30F /* up_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up_home@2x.png"; sourceTree = "<group>"; };
-		C6FA681B1D0027040042C30F /* OverbookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverbookingViewController.h; sourceTree = "<group>"; };
-		C6FA681C1D0027040042C30F /* OverbookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverbookingViewController.m; sourceTree = "<group>"; };
-		C6FA68211D0027040042C30F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		C6FA68221D0027040042C30F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		C6FA68271D0027040042C30F /* CookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookViewController.h; sourceTree = "<group>"; };
-		C6FA68281D0027040042C30F /* CookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookViewController.m; sourceTree = "<group>"; };
 		C6FA682C1D0027040042C30F /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		C6FA682D1D0027040042C30F /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		C6FA682E1D0027040042C30F /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		C6FA68331D0027040042C30F /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
 		C6FA68341D0027040042C30F /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
-		C6FA68381D0027040042C30F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		C6FA68391D0027040042C30F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		C6FA683C1D0027050042C30F /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
-		C6FA683D1D0027050042C30F /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		C6FA683C1D0027050042C30F /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MViewController.h; path = ../MViewController.h; sourceTree = "<group>"; };
+		C6FA683D1D0027050042C30F /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MViewController.m; path = ../MViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +501,238 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6C382A61D0118D800C2C4EF /* 皮肤更换 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "皮肤更换";
+			sourceTree = "<group>";
+		};
+		C6C382A71D0118D800C2C4EF /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
+		C6C382A81D0118D800C2C4EF /* 系统设置 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382AA1D011B2C00C2C4EF /* SystemSettingsTableViewController.h */,
+				C6C382AB1D011B2C00C2C4EF /* SystemSettingsTableViewController.m */,
+			);
+			path = "系统设置";
+			sourceTree = "<group>";
+		};
+		C6C382A91D0118D800C2C4EF /* 账户与安全 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "账户与安全";
+			sourceTree = "<group>";
+		};
+		C6C382C81D01279E00C2C4EF /* 菜谱 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382C91D01279E00C2C4EF /* Controller */,
+				C6C382CC1D01279E00C2C4EF /* Model */,
+				C6C382CD1D01279E00C2C4EF /* View */,
+			);
+			path = "菜谱";
+			sourceTree = "<group>";
+		};
+		C6C382C91D01279E00C2C4EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382CA1D01279E00C2C4EF /* MenuViewController.h */,
+				C6C382CB1D01279E00C2C4EF /* MenuViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6C382CC1D01279E00C2C4EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6C382CD1D01279E00C2C4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6C382CE1D01279E00C2C4EF /* 厨师展示 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382CF1D01279E00C2C4EF /* Controller */,
+				C6C382D21D01279E00C2C4EF /* Model */,
+				C6C382D31D01279E00C2C4EF /* View */,
+			);
+			path = "厨师展示";
+			sourceTree = "<group>";
+		};
+		C6C382CF1D01279E00C2C4EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382D01D01279E00C2C4EF /* CookViewController.h */,
+				C6C382D11D01279E00C2C4EF /* CookViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6C382D21D01279E00C2C4EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6C382D31D01279E00C2C4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6C382D41D01279E00C2C4EF /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382D51D01279E00C2C4EF /* Controller */,
+				C6C382D81D01279E00C2C4EF /* Model */,
+				C6C382D91D01279E00C2C4EF /* View */,
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		C6C382D51D01279E00C2C4EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382D61D01279E00C2C4EF /* NewsViewController.h */,
+				C6C382D71D01279E00C2C4EF /* NewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6C382D81D01279E00C2C4EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6C382D91D01279E00C2C4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6C382DA1D01279E00C2C4EF /* 下单 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382DB1D01279E00C2C4EF /* Controller */,
+				C6C382DE1D01279E00C2C4EF /* Model */,
+				C6C382DF1D01279E00C2C4EF /* View */,
+			);
+			path = "下单";
+			sourceTree = "<group>";
+		};
+		C6C382DB1D01279E00C2C4EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382DC1D01279E00C2C4EF /* OverbookingViewController.h */,
+				C6C382DD1D01279E00C2C4EF /* OverbookingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6C382DE1D01279E00C2C4EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6C382DF1D01279E00C2C4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6C382E41D01288500C2C4EF /* 关于我们 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382E51D01288500C2C4EF /* OurViewController.h */,
+				C6C382E61D01288500C2C4EF /* OurViewController.m */,
+			);
+			path = "关于我们";
+			sourceTree = "<group>";
+		};
+		C6C382E71D01288500C2C4EF /* 关注 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "关注";
+			sourceTree = "<group>";
+		};
+		C6C382E81D01288500C2C4EF /* 收藏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "收藏";
+			sourceTree = "<group>";
+		};
+		C6C382E91D01288500C2C4EF /* 退出与登录 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "退出与登录";
+			sourceTree = "<group>";
+		};
+		C6C382EB1D01291200C2C4EF /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382EC1D01291200C2C4EF /* 个人信息 */,
+				C6C382ED1D01291200C2C4EF /* 注册 */,
+				C6C382EE1D01291200C2C4EF /* 登录 */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		C6C382EC1D01291200C2C4EF /* 个人信息 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C382EF1D01299100C2C4EF /* UserTableViewController.h */,
+				C6C382F01D01299100C2C4EF /* UserTableViewController.m */,
+				C6C382F11D01299100C2C4EF /* UserTableViewController.xib */,
+			);
+			path = "个人信息";
+			sourceTree = "<group>";
+		};
+		C6C382ED1D01291200C2C4EF /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				C627C3FE1D01686C00A5F9EB /* RegisterTableViewController.h */,
+				C627C3FF1D01686C00A5F9EB /* RegisterTableViewController.m */,
+				C627C4001D01686C00A5F9EB /* RegisterTableViewController.xib */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		C6C382EE1D01291200C2C4EF /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				C627C4031D01689200A5F9EB /* LoginTableViewController.h */,
+				C627C4041D01689200A5F9EB /* LoginTableViewController.m */,
+				C627C4051D01689200A5F9EB /* LoginTableViewController.xib */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
 		C6FA67121D00265D0042C30F = {
 			isa = PBXGroup;
 			children = (
@@ -505,8 +758,6 @@
 				C6FA673C1D0027040042C30F /* framework */,
 				C6FA67411D0027040042C30F /* images */,
 				C6FA68181D0027040042C30F /* Main */,
-				C6FA683C1D0027050042C30F /* MViewController.h */,
-				C6FA683D1D0027050042C30F /* MViewController.m */,
 				C6FA67271D00265D0042C30F /* Main.storyboard */,
 				C6FA672A1D00265D0042C30F /* Assets.xcassets */,
 				C6FA672C1D00265D0042C30F /* LaunchScreen.storyboard */,
@@ -539,9 +790,11 @@
 			isa = PBXGroup;
 			children = (
 				C6FA673D1D0027040042C30F /* Common.h */,
+				C6FA67401D0027040042C30F /* PrefixHeader.pch */,
 				C6FA673E1D0027040042C30F /* CustomTabBarController.h */,
 				C6FA673F1D0027040042C30F /* CustomTabBarController.m */,
-				C6FA67401D0027040042C30F /* PrefixHeader.pch */,
+				C6FA683C1D0027050042C30F /* MViewController.h */,
+				C6FA683D1D0027050042C30F /* MViewController.m */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -833,112 +1086,13 @@
 		C6FA68181D0027040042C30F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C6FA68191D0027040042C30F /* 下单 */,
-				C6FA681F1D0027040042C30F /* 动态 */,
-				C6FA68251D0027040042C30F /* 厨师展示 */,
+				C6C382C81D01279E00C2C4EF /* 菜谱 */,
+				C6C382CE1D01279E00C2C4EF /* 厨师展示 */,
+				C6C382D41D01279E00C2C4EF /* 动态 */,
+				C6C382DA1D01279E00C2C4EF /* 下单 */,
 				C6FA682B1D0027040042C30F /* 左侧滑 */,
-				C6FA68361D0027040042C30F /* 菜谱 */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		C6FA68191D0027040042C30F /* 下单 */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA681A1D0027040042C30F /* Controller */,
-				C6FA681D1D0027040042C30F /* Model */,
-				C6FA681E1D0027040042C30F /* View */,
-			);
-			path = "下单";
-			sourceTree = "<group>";
-		};
-		C6FA681A1D0027040042C30F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA681B1D0027040042C30F /* OverbookingViewController.h */,
-				C6FA681C1D0027040042C30F /* OverbookingViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C6FA681D1D0027040042C30F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6FA681E1D0027040042C30F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C6FA681F1D0027040042C30F /* 动态 */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68201D0027040042C30F /* Controller */,
-				C6FA68231D0027040042C30F /* Model */,
-				C6FA68241D0027040042C30F /* View */,
-			);
-			path = "动态";
-			sourceTree = "<group>";
-		};
-		C6FA68201D0027040042C30F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68211D0027040042C30F /* NewsViewController.h */,
-				C6FA68221D0027040042C30F /* NewsViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C6FA68231D0027040042C30F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6FA68241D0027040042C30F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C6FA68251D0027040042C30F /* 厨师展示 */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68261D0027040042C30F /* Controller */,
-				C6FA68291D0027040042C30F /* Model */,
-				C6FA682A1D0027040042C30F /* View */,
-			);
-			path = "厨师展示";
-			sourceTree = "<group>";
-		};
-		C6FA68261D0027040042C30F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68271D0027040042C30F /* CookViewController.h */,
-				C6FA68281D0027040042C30F /* CookViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C6FA68291D0027040042C30F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6FA682A1D0027040042C30F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C6FA682B1D0027040042C30F /* 左侧滑 */ = {
@@ -947,34 +1101,14 @@
 				C6FA682C1D0027040042C30F /* LeftViewController.h */,
 				C6FA682D1D0027040042C30F /* LeftViewController.m */,
 				C6FA682E1D0027040042C30F /* LeftViewController.xib */,
-				C6FA682F1D0027040042C30F /* 关于我们 */,
-				C6FA68301D0027040042C30F /* 关注 */,
-				C6FA68311D0027040042C30F /* 收藏 */,
+				C6C382EB1D01291200C2C4EF /* 登录 */,
+				C6C382E41D01288500C2C4EF /* 关于我们 */,
+				C6C382E71D01288500C2C4EF /* 关注 */,
+				C6C382E81D01288500C2C4EF /* 收藏 */,
+				C6C382E91D01288500C2C4EF /* 退出与登录 */,
 				C6FA68321D0027040042C30F /* 设置 */,
-				C6FA68351D0027040042C30F /* 退出与登入 */,
 			);
 			path = "左侧滑";
-			sourceTree = "<group>";
-		};
-		C6FA682F1D0027040042C30F /* 关于我们 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "关于我们";
-			sourceTree = "<group>";
-		};
-		C6FA68301D0027040042C30F /* 关注 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "关注";
-			sourceTree = "<group>";
-		};
-		C6FA68311D0027040042C30F /* 收藏 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "收藏";
 			sourceTree = "<group>";
 		};
 		C6FA68321D0027040042C30F /* 设置 */ = {
@@ -982,48 +1116,12 @@
 			children = (
 				C6FA68331D0027040042C30F /* SetViewController.h */,
 				C6FA68341D0027040042C30F /* SetViewController.m */,
+				C6C382A61D0118D800C2C4EF /* 皮肤更换 */,
+				C6C382A71D0118D800C2C4EF /* 清除缓存 */,
+				C6C382A81D0118D800C2C4EF /* 系统设置 */,
+				C6C382A91D0118D800C2C4EF /* 账户与安全 */,
 			);
 			path = "设置";
-			sourceTree = "<group>";
-		};
-		C6FA68351D0027040042C30F /* 退出与登入 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "退出与登入";
-			sourceTree = "<group>";
-		};
-		C6FA68361D0027040042C30F /* 菜谱 */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68371D0027040042C30F /* Controller */,
-				C6FA683A1D0027050042C30F /* Model */,
-				C6FA683B1D0027050042C30F /* View */,
-			);
-			path = "菜谱";
-			sourceTree = "<group>";
-		};
-		C6FA68371D0027040042C30F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA68381D0027040042C30F /* MenuViewController.h */,
-				C6FA68391D0027040042C30F /* MenuViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C6FA683A1D0027050042C30F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6FA683B1D0027050042C30F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1124,6 +1222,7 @@
 				C6FA68921D0027050042C30F /* icon_avatar_not_login@3x.png in Resources */,
 				C6FA68D21D0027050042C30F /* icon_movie_3d@3x.png in Resources */,
 				C6FA688E1D0027050042C30F /* v10_18_wifi@3x.png in Resources */,
+				C627C4071D01689200A5F9EB /* LoginTableViewController.xib in Resources */,
 				C6FA69031D0027050042C30F /* movie_home.png in Resources */,
 				C6FA68C81D0027050042C30F /* icon_hot_show_DMAX@2x.png in Resources */,
 				C6FA68911D0027050042C30F /* icon_avatar_not_login@2x.png in Resources */,
@@ -1162,6 +1261,7 @@
 				C6FA68BE1D0027050042C30F /* commentMsgBg@2x.png in Resources */,
 				C6FA68EC1D0027050042C30F /* down_home.png in Resources */,
 				C6FA68861D0027050042C30F /* v10_18_FeatureIMAX@3x.png in Resources */,
+				C627C4021D01686C00A5F9EB /* RegisterTableViewController.xib in Resources */,
 				C6FA68881D0027050042C30F /* v10_18_park@3x.png in Resources */,
 				C6FA68EF1D0027050042C30F /* home_center.png in Resources */,
 				C6FA68A61D0027050042C30F /* icon_preview_play@3x.png in Resources */,
@@ -1225,6 +1325,7 @@
 				C6FA68CC1D0027050042C30F /* icon_hot_show_IMAX@2x.png in Resources */,
 				C6FA68C31D0027050042C30F /* ico_index_title_1.png in Resources */,
 				C6FA68F61D0027050042C30F /* icon_default_375x140@3x.png in Resources */,
+				C6C382F31D01299100C2C4EF /* UserTableViewController.xib in Resources */,
 				C6FA69061D0027050042C30F /* movie_select_home@2x.png in Resources */,
 				C6FA689E1D0027050042C30F /* icon_my_goods_order@3x.png in Resources */,
 				C6FA688D1D0027050042C30F /* v10_18_wifi@2x.png in Resources */,
@@ -1302,18 +1403,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C627C4061D01689200A5F9EB /* LoginTableViewController.m in Sources */,
 				C6FA69121D0027050042C30F /* LeftViewController.m in Sources */,
-				C6FA690F1D0027050042C30F /* OverbookingViewController.m in Sources */,
 				C6FA683E1D0027050042C30F /* AppDelegate.m in Sources */,
+				C6C382E31D01279E00C2C4EF /* OverbookingViewController.m in Sources */,
+				C6C382EA1D01288500C2C4EF /* OurViewController.m in Sources */,
+				C627C4011D01686C00A5F9EB /* RegisterTableViewController.m in Sources */,
 				C6FA69141D0027050042C30F /* SetViewController.m in Sources */,
-				C6FA69111D0027050042C30F /* CookViewController.m in Sources */,
 				C6FA68401D0027050042C30F /* BaseViewController.m in Sources */,
+				C6C382F21D01299100C2C4EF /* UserTableViewController.m in Sources */,
 				C6FA67201D00265D0042C30F /* main.m in Sources */,
+				C6C382E21D01279E00C2C4EF /* NewsViewController.m in Sources */,
 				C6FA68411D0027050042C30F /* CustomTabBarController.m in Sources */,
 				C6FA69161D0027050042C30F /* MViewController.m in Sources */,
+				C6C382AC1D011B2C00C2C4EF /* SystemSettingsTableViewController.m in Sources */,
+				C6C382E01D01279E00C2C4EF /* MenuViewController.m in Sources */,
+				C6C382E11D01279E00C2C4EF /* CookViewController.m in Sources */,
 				C6FA683F1D0027050042C30F /* BaseNavigationController.m in Sources */,
-				C6FA69151D0027050042C30F /* MenuViewController.m in Sources */,
-				C6FA69101D0027050042C30F /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1424,7 +1530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/BEVER/Desktop/COOKER/COOKER/framework/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/COOKER/framework/PrefixHeader.pch";
 				INFOPLIST_FILE = COOKER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = linan.COOKER;
@@ -1437,7 +1543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/BEVER/Desktop/COOKER/COOKER/framework/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/COOKER/framework/PrefixHeader.pch";
 				INFOPLIST_FILE = COOKER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = linan.COOKER;

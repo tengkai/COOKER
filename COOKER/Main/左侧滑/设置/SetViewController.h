@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetViewController : UIViewController
+@interface SetViewController : UITableViewController
 
-@property (nonatomic,strong) UITableView *tableView;
-
+@property (nonatomic, strong) UITableView *setTableView;
 
 @end
